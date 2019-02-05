@@ -1,0 +1,270 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+.view_wh {
+	position: relative;
+	width: 98%;
+	min-height: 500px;
+	left: 1%;
+	color: #39f50d;
+	background: #000;
+	overflow: hidden;
+}
+
+.inner_wh {
+	height: 100%;
+	overflow: auto;
+	margin-bottom: 6%;
+
+  font: 12px/1.2 Arial;
+  perspective: 600px;
+  perspective: 600px;
+  background: #666;
+  background: linear-gradient(#222,#222,#444);
+  text-align:center;
+}
+
+.flat_view {
+  height: 98%;
+  overflow: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.threed_view {
+	display: none;
+}
+
+.aisle {
+	display: inline-block;
+  margin-top: 10px;
+  margin-left: 5px;
+  text-align: center;
+  box-shadow: 0px 0px 3px #999;
+}
+
+.aisle .shelf {
+	display: inline-block;
+	list-style-type: none;
+	font-size: 10px;
+  padding: 0;
+}
+
+.aisle h3 {
+	text-align: center;
+}
+
+.left {
+	float: left;
+  margin-left: 10%;
+}
+
+.right {
+	float: right;
+  margin-right: 10%;
+}
+
+.max_imize {
+	font-size: 18px;
+	color: #999;
+}
+
+.max_imize:hover {
+	color: #000;
+}
+
+.min_imize {
+    position: absolute;
+    display: none;
+    font-size: 18px;
+    color: #999;
+    top: 1%;
+    right: 1%;
+    z-index: inherit;
+}
+
+.min_imize:hover {
+  color: #fff;
+}
+
+.col_head {
+  cursor: pointer;
+  border-radius: 3px;
+  /*margin-bottom: 10px;*/
+  box-shadow: 0px 0px 3px #fff;
+}
+
+.col_bins {
+  padding-right: 5px;
+  background: #000;
+
+  /*border: 1px dashed #fff;*/
+  list-style-type: none;
+  box-shadow: 0px 0px 3px #fc3;
+
+}
+
+.col_bins .bin {
+  visibility: hidden;
+}
+
+.col_head:hover {
+  background: #fc3;
+  color:#000;
+}
+
+.col_head:hover .col_bins .bin {
+  visibility: visible;
+  width:100%;
+  color: #39f50d;
+
+}
+
+.show_pass {
+  cursor: pointer;
+}
+.show_pass i {
+  color: #999;
+}
+
+
+b.pass {
+  display: none;
+}
+
+.show_pass:hover > b.pass {
+  display: block;
+}
+
+.show_pass:hover > i {
+  color: #0fa3de;
+}
+
+.show_pass:hover > b._pass{
+  display: none;
+}
+
+.make_default {
+  display: none;
+}
+
+.set_pars {
+  border: none;
+  background: transparent;
+  color: #3df702;
+  text-shadow: 0px 0px 5px #000;
+  outline: none;
+}
+
+.set_pars:hover {
+  color: #fc3;
+  text-shadow: 0px 0px 5px #cc02aa;
+}
+
+.link {
+  padding: 1px 6px;
+  color: #94c0e6;
+}
+
+.active_link {
+    border: 1px solid #071d01;
+    border-radius: 3px;
+    background: #999;
+    color: #fc3;  
+}
+/* erp configuration styles */
+
+#saved_queries,.q_result {
+  position: relative;
+  max-height: 700px;
+  background: #fff;
+  overflow: auto;
+  padding: 2%;
+  padding-bottom: 15%;
+}
+
+h4 {
+  text-align: center;
+}
+
+#ajax_loading {
+  display: none;
+}
+
+#target_form {
+  display: none;
+}
+
+#target_form.active {
+  display: block;
+}
+
+#item_adder{
+    max-height: 550px;
+    padding-bottom: 15%;
+    overflow: auto;
+}
+
+
+#required_fields {
+    width: 50%;
+    font-size: 11px;
+}
+
+#required_field_options {
+    float: right;
+    width: 48%;
+    height: 178px;
+    margin-top: -135px;
+    margin-right: 3px;    
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 5px;
+}
+
+#required_field_options h6 {
+    color: #999;
+    text-align: center;
+}
+
+#required_field_options hr {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.field_ {
+    cursor: pointer;
+}
+
+.field_:hover {
+  color: #f3c;
+  background: #555;
+}
+
+.list {
+  padding-bottom: 3%;
+}
+
+.q_ {
+  color: #ddd;
+  cursor: pointer;
+}
+
+.q_:hover {
+  color: #555;
+}
+
+.items {
+  position: absolute;
+  width: 20%;
+  background: #555;
+  border-radius: 5px;
+  list-style-type: none;
+
+}
+
+.items li {
+  border: 1px dashed #fc3;
+}
